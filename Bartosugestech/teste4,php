@@ -1,0 +1,17 @@
+<?php
+ require('conexao.php');
+ require('teste.php');
+ 
+ try{
+     //$stmt = $pdo->query('INSERT INTO `bartosugestech`.`usuario` (`usuario`, `rm`, `senha`, `nome`) VALUES (:nome, :rm, :senha, :nome)');
+     $stmt = $pdo->query("SELECT postagens FROM bartosugestech.postagens where id_tipo=2" );
+     //$stmt = $pdo->query("SELECT id, nome, senha FROM agendapw2ab.usuario WHERE nome ='$login' AND senha = '$senha'");
+     
+     while ($linha = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo "{$linha['postagens']} <br/>";
+     }
+ }catch(PDOException $e){
+     echo 'Erro: '. $e -> getMessage();
+     echo ("Não inseriu corretamente");
+ }
+?>

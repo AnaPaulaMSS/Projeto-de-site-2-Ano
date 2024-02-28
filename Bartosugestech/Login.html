@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Login</title>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+				border: none;
+			}
+			.quadrado{
+				background-color: #E1E0E3;
+				position: absolute;
+				height: 480px;
+				width: 32%;
+				top: 100px;
+				left: 33%;
+				border-radius: 15px;
+				box-shadow: 1px 4px 6px 0px grey;
+			}
+			
+			#titulo{
+				border-bottom:1px solid #545454;
+				width:84%;
+				margin-left:8%;
+			}
+			#titulo p{
+				font-size: 48px;
+				color: black;
+				padding: 10px 0 0px 0;
+				font-family: Arial,sans-serif;
+				font-weight: 800;
+				text-align: center;
+			}
+			
+			#um{
+				position: relative;
+				background-color: #FFFFFF;
+				font-size: 15px;
+				height: 40px;
+				top: 30px;
+				width: 80%;
+				margin-left: 10%;
+				text-align: left;
+				border-radius: 20px;
+			}
+			#dois{
+				position: relative;
+				background-color: #FFFFFF;
+				font-size: 15px;
+				height: 40px;
+				top: 47px;
+				width: 80%;
+				margin-left: 10%;
+				text-align: left;
+				border-radius: 20px;
+			}
+			#logar{
+				position: relative;
+				top: 80px;
+				color: #E1E0E3;
+				background-color: #ED5F72;
+				width: 50%;
+				height: 40px;
+				margin-left: 25%;
+				text-align: center;
+				font-size: 22px;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+			.logar a:hover {
+				background-color:#243859
+			}
+			#cadastrar{
+				position: relative;
+				top: 160px;
+				color: black;
+				margin-left: 18%;
+				font-family: Arial,sans-serif;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			#cadastrar a{
+				text-decoration:none;
+				color: #ED5F72;
+			}
+			a:hover{
+				color:#ED5F72;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="quadrado">
+			<div id="titulo"><p> Entrar </p> <br> </div>
+			<form name="login" action="logar.php" method="post">
+				<input id="um" placeholder="    Usuário" type="text" name="email"> <br>
+				<input id="dois" placeholder="    Senha" type="password" name="senha"> <br>
+				
+				<input id="logar" type="submit" value="Logar">
+				<label id="cadastrar"> Novo por aqui? <a href="Cadastro.html">  Cadastre-se! </a></label> <br/>
+			</form>
+		</div>
+	</body>
+</html>

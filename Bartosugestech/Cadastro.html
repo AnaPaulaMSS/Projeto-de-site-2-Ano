@@ -1,0 +1,111 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cadastro</title>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+				border: none;
+			}
+			.quadrado{
+				background-color: #E1E0E3;
+				position: absolute;
+				height: 500px;
+				width: 32%;
+				top: 100px;
+				left: 33%;
+				border-radius: 15px;
+				box-shadow: 1px 4px 6px 0px grey;
+			}
+			
+			#titulo{
+				border-bottom:1px solid #545454;
+				width:84%;
+				margin-left:8%;
+			}
+			#titulo p{
+				font-size: 48px;
+				color: black;
+				padding: 10px 0 0px 0;
+				font-family: Arial,sans-serif;
+				font-weight: 800;
+				text-align: center;
+			}
+			
+			#um{
+				position: relative;
+				background-color: #FFFFFF;
+				font-size: 15px;
+				height: 40px;
+				top: 30px;
+				width: 80%;
+				margin-left: 10%;
+				text-align: left;
+				border-radius: 20px;
+			}
+			#dois{
+				position: relative;
+				background-color: #FFFFFF;
+				font-size: 15px;
+				height: 40px;
+				top: 47px;
+				width: 80%;
+				margin-left: 10%;
+				text-align: left;
+				border-radius: 20px;
+			}
+			#tres{
+				position: relative;
+				background-color: #FFFFFF;
+				font-size: 15px;
+				height: 40px;
+				top: 64px;
+				width: 80%;
+				margin-left: 10%;
+				text-align: left;
+				border-radius: 20px;
+			}
+			#quatro{
+				position: relative;
+				background-color: #FFFFFF;
+				font-size: 15px;
+				height: 40px;
+				top: 81px;
+				width: 80%;
+				margin-left: 10%;
+				text-align: left;
+				border-radius: 20px;
+			}
+			#cadastrar{
+				position: relative;
+				top: 90px;
+				color: #E1E0E3;
+				background-color: #ED5F72;
+				width: 50%;
+				height: 40px;
+				margin-left: 25%;
+				text-align: center;
+				font-size: 22px;
+				border-radius: 20px;
+			}
+		
+		</style>
+	</head>
+	<body bgcolor="#f2f2f2">
+		<div class="quadrado">
+			<div id="titulo"><p> Cadastre-se </p> <br> </div>
+			<form name="login" action="cadastro.php" method="post">
+			
+				<input id="um" placeholder="    Usuário" type="text" name="nick"> <br>
+				<input id="dois" placeholder="    Senha" type="password" name="senha"> <br>
+				<input id="tres" placeholder="    Nome Completo" type="text" name="login"> <br>
+				<input id="quatro" placeholder="    RM" type="text" name="rm"> <br>
+				
+				<input id="cadastrar" type="submit" value="Concluir">
+			</form>
+		</div>
+	</body>
+</html>
